@@ -15,6 +15,8 @@ moment = Moment(app)
 app.jinja_env.trim_blocks=True
 #删除Jinja2 语句所在行之前的空格和制表符(tabs)
 app.jinja_env.lstrip_blocks=True
+#注册全局变量
+app.jinja_env.globals['admin_name'] = 'Harry.Cheng'
 #数据库实例
 db = SQLAlchemy(app)
 #初始化数据库

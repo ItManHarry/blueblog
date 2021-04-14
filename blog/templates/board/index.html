@@ -6,6 +6,7 @@
             <div class="row">
                 <div class="col text-center">
                     <h1><a href = "{{url_for('board.index')}}">博客-留言板</a></h1>
+                    <small>Administrator : {{ admin_name }}</small>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@
               </div>
               <div class="mb-3">
                   <button class="btn btn-outline-primary" type="submit"><i class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp;发布</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                  <button class="btn btn-outline-success" onclick="checkdate('2021-03-02')">校验日期</button>
+                  <!--button class="btn btn-outline-success" onclick="checkdate('2021-03-02')">校验日期</button-->
               </div>
           </form>
         </div>

@@ -5,6 +5,7 @@ import os
 from app import app
 #开发数据库
 dev_db = 'sqlite:///'+os.path.join(app.root_path, 'db/data.db')
+print('Database file path is : ' , os.path.join('e:/python/development', 'db/data.db'))
 #系统秘钥(session等使用必须配置)
 SECRET_KEY = os.getenv('SECRET_KEY', 'secretkey0001')
 #数据库配置

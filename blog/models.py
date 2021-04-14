@@ -5,7 +5,7 @@ from datetime import datetime
 from app import db
 
 class TbMessage(db.Model):
-    id = db.Column(db.String, primary_key=True)
+    id = db.Column(db.String(40), primary_key=True)
     title = db.Column(db.String(20))
     body = db.Column(db.Text)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow,index=True)
